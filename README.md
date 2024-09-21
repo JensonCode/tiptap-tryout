@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tiptap Integration in a Next.js Application
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a demonstration of using **Tiptap** in a Next.js application. The goal is to build a fully functional article form with rich text editing capabilities, utilizing **shadcn-ui** components and Next.js features.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Scope
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Implement an article creation form in **Next.js**.
+- Utilize **shadcn-ui** components for the UI.
+- Integrate a **Rich Text Editor** using **Tiptap**.
+- Enable server-side rendering (SSR) for SEO optimization and performance.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Goal
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The primary goal is to allow content editing with **custom JSX elements** and ensure the articles are server-side rendered for improved SEO. This creates a functional and interactive blog solution.
 
-## Learn More
+## Why Tiptap?
 
-To learn more about Next.js, take a look at the following resources:
+**Tiptap** is a widely-used choice for rich text editing due to its ease of setup and extensive customization options. It supports adding custom JSX elements through its content extensions, making it highly flexible for dynamic applications.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Thought Process
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Define the Schema**:
+   - Use **TypeScript interfaces** and **Zod** schemas for type safety and validation.
+   
+2. **Create Forms**:
+   - Develop forms for creating and updating articles.
+   
+3. **Mock Data**:
+   - Incorporate mock data for testing and development purposes.
+   
+4. **Render Articles**:
+   - Style and display articles using the appropriate components and SSR for performance.
